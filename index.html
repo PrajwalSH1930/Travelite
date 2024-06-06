@@ -1,0 +1,972 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelite</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/popup.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins";
+    }
+
+    .contactContainer {
+        background-image: linear-gradient(rgba(0, 0, 0, .34), rgba(0, 0, 0, .34)), url("img/contactbackgroundimg.jpg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+        gap: 48px;
+
+    }
+
+    .contactForm form {
+        width: 670px;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, .1);
+        backdrop-filter: blur(20px);
+        flex-wrap: wrap;
+    }
+
+    .contactForm form h1 {
+        color: #fff;
+        font-weight: 700;
+        line-height: 2;
+        margin-top: 20px;
+        width: 600px;
+        text-align: center;
+    }
+
+    .contactForm form input {
+        width: 300px;
+        height: 50px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        margin-bottom: 10px;
+        background: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+    }
+
+    .contactForm form input::placeholder {
+        color: #fff;
+    }
+
+    .contactForm form #lastName,
+    .contactForm form #mobile {
+        margin-left: 20px;
+    }
+
+    .contactForm form h4 {
+        color: #fff;
+        font-weight: 300;
+        width: 600px;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .contactForm form textarea {
+        background: none;
+        border: none;
+        border-bottom: 2px solid #fff;
+        color: #fff;
+        font-weight: 200;
+        font-size: 18px;
+        padding: 10px;
+        outline: none;
+        min-height: 90px;
+        max-height: 90px;
+        min-width: 620px;
+        max-width: 620px;
+    }
+
+    .contactForm #button {
+        border: none;
+        background: #fff;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 20px;
+        color: #222;
+        width: 150px;
+        height: 45px;
+        padding: 0;
+        margin-bottom: 30px;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+    }
+
+    .contactForm #button:hover {
+        background: #222;
+        color: #fff;
+    }
+
+    iframe {
+        border-radius: 15px;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navigation">
+        <img src="img/travelite5.png" alt="" class="logo"  />
+        <!-- <h2 class="logo">LOGO</h2> -->
+        <nav class="login-Signup-section">
+          <button class="btnlogin-signup">LOGIN</button>
+        </nav>
+      </div>
+    </header>
+    
+    <section class="home">
+      
+      <div class="swiper bg-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide dark-layer">
+            <img src="img/view-world-travel-map-travel-essentials.jpg" alt="" />
+            <div class="position">
+              <div class="image-container">
+                <div class="image-div image-div-T image--1">
+                  <span class="letter-T letter">T</span>
+                  <p class="tour-name">Mountains</p>
+                </div>
+
+                <div class="image-div image-div-R image--2">
+                  <span class="letter-R letter">R</span>
+                  <p class="tour-name">Beaches</p>
+                </div>
+
+                <div class="image-div image-div-A image--3">
+                  <span class="letter-A letter">A</span>
+                  <p class="tour-name">Culinary</p>
+                </div>
+
+                <div class="image-div image-div-V image--4">
+                  <span class="letter-V letter">V</span>
+                  <p class="tour-name">Adventure</p>
+                </div>
+
+                <div class="image-div image-div-E image--5">
+                  <span class="letter-E letter">E</span>
+                  <p class="tour-name">Attractions</p>
+                </div>
+
+                <div class="image-div image-div-L image--6">
+                  <span class="letter-L letter">L</span>
+                  <p class="tour-name">Arts and Culture</p>
+                </div>
+              </div>
+              <blockquote>
+                "Travel is the best way to feed the soul and expand the mind".
+              </blockquote>
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img
+              src="img/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds.jpg"
+              alt=""
+            />
+            <div class="text-content">
+              <h2 class="title">Mountains <span></span></h2>
+              <p>
+                You have to through those mountains and valley - because that's what life is: soul growth
+              </p>
+              
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img
+              src="img/landscape-railay-beach-sunrise-krabi-thailand.jpg"
+              alt=""
+            />
+            <div class="text-content">
+              <h2 class="title">Beaches <span></span></h2>
+              <p>
+            A day at the beach restores the soul,sometime you just need a beach day
+              </p>
+              
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img
+              src="img/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg"
+              alt=""
+            />
+            <div class="text-content">
+              <h2 class="title">Culinary <span></span></h2>
+              <p>
+             Food makes travel so exceptional ,because you get to taste what it's actually supposed to taste like. to eat the real pad thai or finally have a proper curry is something pretty amazing
+              </p>
+              
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img
+              src="img/always-fun-see-tall-ferris-wheel-when-approaching-park-holidays-full-happy-people.jpg"
+              alt=""
+            />
+            <div class="text-content">
+              <h2 class="title">Family Attractions<span></span></h2>
+              <p>
+               The best gifts in the world are not in the material objects one can buy from the store ,But in the travel memories we make with the people we love
+              </p>
+              
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img
+              src="img/one-person-standing-top-mountain-peak-backpacking-success-generated-by-ai.jpg"
+              alt=""
+            />
+            <div class="text-content">
+              <h2 class="title">Adventure<span></span></h2>
+              <p>
+         Jobs fills pocket, But adventures fill your soul
+              </p>
+             
+            </div>
+          </div>
+          <div class="swiper-slide dark-layer">
+            <img
+              src="img/ancient-ruins-angkor-majestic-spirituality-praying-generated-by-ai.jpg"
+              alt=""
+            />
+            <div class="text-content">
+              <h2 class="title">Arts and Culture<span></span></h2>
+              <p>
+                Travel the world understand different cultures. Be inspired beauty Everywhere. Make
+              </p>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+   
+</div>
+      <div class="bg-slider-thumbs">
+        <div class="swiper-wrapper thumbs-container">
+          <img src="img/b1.png" alt="" class="swiper-slide" />
+          <img
+            src="img/beautiful-scenery-summit-mount-everest-covered-with-snow-white-clouds.jpg"
+            alt=""
+            class="swiper-slide"
+          />
+          <img
+            src="img/landscape-railay-beach-sunrise-krabi-thailand.jpg"
+            alt=""
+            class="swiper-slide"
+          />
+          <img
+            src="img/fresh-gourmet-meal-beef-taco-salad-plate-generated-by-ai.jpg"
+            alt=""
+            class="swiper-slide"
+          />
+          <img
+            src="img/always-fun-see-tall-ferris-wheel-when-approaching-park-holidays-full-happy-people.jpg"
+            alt=""
+            class="swiper-slide"
+          />
+          <img
+            src="img/one-person-standing-top-mountain-peak-backpacking-success-generated-by-ai.jpg"
+            alt=""
+            class="swiper-slide"
+          />
+          <img
+            src="img/ancient-ruins-angkor-majestic-spirituality-praying-generated-by-ai.jpg"
+            alt=""
+            class="swiper-slide"
+          />
+        </div>
+      </div>
+    </section>
+    <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p id="modal-message"></p>
+    </div>
+</div>
+    <section class="container-form">
+      <div class="wrapper">
+        <span class="icon-closed-cross"
+          ><ion-icon name="close-outline"></ion-icon
+        ></span>
+        <div class="form-box login">
+          <h2 class="primary-heading">LOGIN</h2>
+          <form action="" method="post" onsubmit="return handleLogin();">
+            
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" name="email" id="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" name="password" id="password" required />
+              <label>Password</label>
+            </div>
+           
+            <button type="submit" class="btn-submit" name="login" id="login">LOGIN</button>
+            <div class="login-register">
+              <p>
+                Dont't have an account?<a href="#" class="register-link">
+                  Register</a
+                >
+              </p>
+            </div>
+          </form>
+         
+        </div>
+
+        <div class="form-box register">
+          <h2 class="primary-heading">Registration</h2>
+          <form action="/TRAVELITE/index.php" method="post"  onsubmit="return handleSignup();"  >
+            <div class="input-box">
+              <span class="icon"><ion-icon name="person"></ion-icon></span>
+              <input type="text" name="username" id="username" required />
+              <label>Username</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail"></ion-icon></span>
+              <input type="email" name="email" id="email" required />
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+              <input type="password" name="password" id="password" required />
+              <label>Password</label>
+            </div>
+            <div class="remember-forget">
+              <label
+                ><input type="checkbox" />agree to the terms and
+                conditions</label
+              >
+            </div>
+            <button type="submit" class="btn-submit" name="signup" id="signup">SIGNUP</button>
+            <div class="login-register">
+              <p>
+                Already have an account?<a href="#" class="login-link">
+                  Login</a
+                >
+              </p>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </section> 
+
+    
+
+    <section class="info">
+      <div class="info_box">
+        <img src="img/globe.png" alt="" class="infoImg" />
+        <div class="box">
+          <h2 class="secondary-head">100+ Destinations</h2>
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+      <div class="info_box">
+        <img src="img/money.png" alt="" class="infoImg" />
+        <div class="box">
+          <h2 class="secondary-head">100+ Destinations</h2>
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+      <div class="info_box">
+        <img src="img/24-hours-support.png" alt="" class="infoImg" />
+        <div class="box">
+          <h2 class="secondary-head">100+ Destinations</h2>
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+      <div class="info_box">
+        <img src="img/calendar.png" alt="" class="infoImg" />
+        <div class="box">
+          <h2 class="secondary-head">100+ Destinations</h2>
+          <p>Lorem ipsum</p>
+        </div>
+      </div>
+    </section>
+    <section class="packages">
+      <div class="pWrapper">
+        <div class="parallaxSection">
+          <div class="parallax_bg"></div>
+          
+            
+           
+          <div class="packageList">
+            <div class="swiper packageSwiper">
+              <h2 class="head">
+                Popular Tour Packages &emsp;
+                <a href="">/&nbsp; View All Tours</a>
+              </h2>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/india.jpg" alt="" />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>India - 5 Days All over india</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹75000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>5 Days</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                        <p>(32 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="img/cherry-blossoms-spring-chureito-pagoda-fuji-mountain-sunset-japan.jpg"
+                    alt=""
+                  />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>Japan - 5 Days in Tokyo, Fujikawa</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹128000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>5 Days</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                        <p>(88 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/italy.jpg" alt="" />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>enquiry form only - Italy - 6 days</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹160000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>6 Days</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                        <p>(32 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/swiss.jpg" alt="" />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>switzerland - 7 days in zurich, zermatt</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹280000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>5 Days</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star-half"></i>
+                        <p>(63 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/dubai.jpg" alt="" />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>Dubai - All stunning places</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹96000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>8 Hours</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                        <p>(103 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/paris.jpg" alt="" />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>paris - eiffel tower, notre dame cath</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹64000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>10 Hours</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                        <p>(37 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/africa.jpg" alt="" />
+                  <div class="packageDetails">
+                    <div class="package-head">
+                      <h3>Africa - amazing african safari</h3>
+                      <div class="price_box">
+                        <p class="from">from</p>
+                        <p class="price">₹8000</p>
+                      </div>
+                    </div>
+                    <div class="duration_review">
+                      <div class="duration">
+                        <i class="bx bx-time-five"></i>
+                        <p>5 Hours</p>
+                      </div>
+                      <div class="review">
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bxs-star"></i>
+                        <i class="bx bx-star"></i>
+                        <p>(78 Reviews)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="destinations">
+      <div class="dest-heading">
+        <div>
+          <i class="bx bx-map dest_icon"></i>
+          <p class="head">Popular Destinations &emsp;</p>
+          <a href="">/ &nbsp;View All Destinations</a>
+        </div>
+        
+      </div>
+      <div class="destContainer">
+        <div class="destBox">
+          <img src="img/europe.jpg" alt="" class="destImg" />
+          <div class="details">
+            <div class="location">
+              <i class="bx bx-map"></i>
+              <span>Europe</span>
+            </div>
+            <!-- <p class="tours">3 Tours</p> -->
+          </div>
+        </div>
+        <div class="destBox">
+          <img src="img/asia.jpg" alt="" class="destImg" />
+          <div class="details">
+            <div class="location">
+              <i class="bx bx-map"></i>
+              <span>Asia</span>
+            </div>
+            <!-- <p class="tours">4 Tours</p> -->
+          </div>
+        </div>
+        <div class="destBox">
+          <img src="img/la.jpg" alt="" class="destImg" />
+          <div class="details">
+            <div class="location">
+              <i class="bx bx-map"></i>
+              <span>America</span>
+            </div>
+            <!-- <p class="tours">5 Tours</p> -->
+          </div>
+        </div>
+        <div class="destBox">
+          <img src="img/africa1.jpg" alt="" class="destImg" />
+          <div class="details">
+            <div class="location">
+              <i class="bx bx-map"></i>
+              <span>Africa</span>
+            </div>
+            <!-- <p class="tours">3 Tours</p> -->
+          </div>
+        </div>
+        <div class="destBox">
+          <img src="img/sa.jpg" alt="" class="destImg" />
+          <div class="details">
+            <div class="location">
+              <i class="bx bx-map"></i>
+              <span>South America</span>
+            </div>
+            <!-- <p class="tours">6 Tours</p> -->
+          </div>
+        </div>
+      </div>
+      
+        
+   
+    </section>
+    <section class="services">
+      <div class="service-row">
+        <div class="service-column">
+          <h2 class="title">
+            Services<span class="animate" style="--i: 1"></span>
+          </h2>
+          <div class="service-box">
+            <div class="service-content">
+              <div class="content">
+                <h3>Transportation Arrangements</h3>
+                <p>
+                 Facilitating transportatiion needs such as car rentals, shuttle services,private transfers and public transportation options to and from airports,hotels,and other destinations.
+                </p>
+              </div>
+            </div>
+            <div class="service-content">
+              <div class="content">
+                <h3>Vacation Package Deals</h3>
+                <p>
+                 Offering bundled deals that include flights,accomodations,and sometimes additional perks like tours,meals,or activities at a discounted rate compared to booking each component separately.
+                </p>
+              </div>
+            </div>
+            <span class="animate" style="--i: 1"></span>
+          </div>
+        </div>
+        <div class="service-column">
+          <h2 class="title">&emsp;</h2>
+          <div class="service-box">
+            <div class="service-content">
+              <div class="content">
+                <h3>Flight Booking</h3>
+                <p>
+                  Assistance in finding and booking flights to desired destinations, including options for different airlines, schedules, and prices.
+                </p>
+              </div>
+            </div>
+            <div class="service-content">
+              <div class="content">
+                
+                <h3>Hotel Reservations</h3>
+                <p>
+                  Helping customers find suitable accomodation based on their preferences, budget, and location requirements. This can include various types of lodging such as hotels, resorts, bed and breakfasts, and vacation rentals.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-column">
+          <h2 class="title">&emsp;</h2>
+          <div class="service-box">
+            <div class="service-content">
+              <div class="content">
+               
+                <h3>Group Travel Planning and Coordination</h3>
+                <p>
+                helping organize group trips for families ,friends ororganizations, including logistics like group flights, accomodations, and coordinating activities or events. 
+                </p>
+              </div>
+            </div>
+            <div class="service-content">
+              <div class="content">
+               
+                <h3>User Account</h3>
+                <p>
+                  Users would need to create an account or sign in to access the wishlist feature. This ensures that their saved packages are stored securely and can be accessed across different devices.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <div class="contactUs">
+        <div class="contactContainer">
+            <div class="videoLoader">
+                <iframe width="670" height="600" src="https://www.youtube.com/embed/_e8BFrAPedM?si=7YQuP8yNCcM3Fsu5"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen controls></iframe>
+            </div>
+            <div class="contactForm">
+            <form action=""  method="post">
+                    <h1>Contact Us Form</h1>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
+                    <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number" required>
+                    <h4>Type Your Message Here...</h4>
+                    <textarea name="message" required id="message"></textarea>
+                    <input type="submit" name="contact" value="Send" id="button">
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="testimonials">
+      <div class="swiper testSwiper">
+        <h1>Our testimonial</h1>
+        <h2 class="testHead">What Clients Say About Us ?</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <img src="img/double-quotes.png" alt="" class="quote" />
+              <div class="testContent">
+                <p>
+                  The travelers location deep within the forest provided a sereme and enchanting escape from the moment i arrived i felt embraced by nature's beauty,surrounded by tall trees, the gentle murmur of anearby brook, and the fresh scent of pine.
+                </p>
+                <div class="testDetails">
+                  <div class="imgBx">
+                    <img src="img/user1.jpg" alt="" />
+                  </div>
+                  <h3>Anonymous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <!-- <img src="img/mark.png" alt="" class="quote" /> -->
+              <img src="img/double-quotes.png" alt="" class="quote" />
+              <div class="testContent">
+                <p>
+                 On the windows talking painted pature yet its express parties use.Sure last upon he same as knew next.of believed or diverted no.
+                </p>
+                <div class="testDetails">
+                  <div class="imgBx">
+                    <img src="img/user2.webp" alt="" />
+                  </div>
+                  <h3>Anonymous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <!-- <img src="img/mark.png" alt="" class="quote" /> -->
+              <img src="img/double-quotes.png" alt="" class="quote" />
+              <div class="testContent">
+                <p>
+                 Travelite is recognized as one of the finest travel agency in the world when it comes to planning a trip, I found them to be dependable.
+                </p>
+                <div class="testDetails">
+                  <div class="imgBx">
+                    <img src="img/user3.webp" alt="" />
+                  </div>
+                  <h3>Anonymous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <!-- <img src="img/mark.png" alt="" class="quote" /> -->
+              <img src="img/double-quotes.png" alt="" class="quote" />
+              <div class="testContent">
+                <p>
+                 On the windows talking painted pasture yet its express parties use.Sure last upon he same as knew next.Of believed or diverted no.
+                </p>
+                <div class="testDetails">
+                  <div class="imgBx">
+                    <img src="img/user4.webp" alt="" />
+                  </div>
+                  <h3>Anonymous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonialBox">
+              <!-- <img src="img/mark.png" alt="" class="quote" /> -->
+              <img src="img/double-quotes.png" alt="" class="quote" />
+              <div class="testContent">
+                <p>
+                The travelers location deep within the forest provided a sereme and enchanting escape from the moment i arrived i felt embraced by nature's beauty,surrounded by tall trees, the gentle murmur of anearby brook, and the fresh scent of pine.
+                </p>
+                <div class="testDetails">
+                  <div class="imgBx">
+                    <img src="img/user5.webp" alt="" />
+                  </div>
+                  <h3>Anonymous<br /><span>Creative Designer</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <div class="footer">
+      <div class="choose">
+        <p>Why Book With Us?</p>
+      </div>
+      <div class="footer-info">
+        <div class="info_box">
+          <img src="img/like.png" alt="" class="infoImg" />
+          <div class="box">
+            <h2 class="secondary-head">40,000+ Customers</h2>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="info_box">
+          <img src="img/trophy.png" alt="" class="infoImg" />
+          <div class="box">
+            <h2 class="secondary-head">Award Winning</h2>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+        <div class="info_box">
+          <img src="img/lock.png" alt="" class="infoImg" />
+          <div class="box">
+            <h2 class="secondary-head">Secure Payment</h2>
+            <p>Lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="mainFooter">
+        <div class="footLine">
+          <h2>LOGO</h2>
+          <p class="">
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+          <p class="copy">
+            Copyright © 2023 by Travelite, Inc. <br />
+            All rights reserved.
+          </p>
+        </div>
+        <div class="popularPlaces">
+          <h2>Popular Places</h2>
+          <div class="imagePop">
+            <img src="img/africa1.jpg" alt="" />
+            <img src="img/asia.jpg" alt="" />
+            <img src="img/dubai.jpg" alt="" />
+            <img src="img/paris.jpg" alt="" />
+            <img src="img/italy.jpg" alt="" />
+            <img src="img/la.jpg" alt="" />
+          </div>
+        </div>
+        <div class="contact">
+          <h2>Contact Us At</h2>
+          <ul class="logos">
+            <li>
+              <a href=""><i class="bx bxl-gmail" title="Gmail"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bxl-facebook" title="Facebook"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bxl-linkedin" title="LinkedIn"></i></a>
+            </li>
+            <li>
+              <a href=""
+                ><i class="bx bxl-pinterest-alt" title="Pinterest"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bxl-skype" title="Skype"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bx bxl-twitter" title="Twitter"></i></a>
+            </li>
+          </ul>
+          <p class="Address">
+            #421/B/6/D , ABCD Building, Opp ABCD Street, Belagavi, Karnataka -
+            591234
+          </p>
+          <p>+91 1234567890</p>
+          <p>travelite@gmail.com</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

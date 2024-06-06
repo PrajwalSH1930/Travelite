@@ -1,0 +1,425 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f5f5f5;
+  color: #444;
+  font-family: "Poppins";
+  /* position: relative; */
+}
+.container {
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 60px auto;
+  /* margin-left: 60px; */
+}
+.menuBar {
+  border-right: 1.5px solid #ccc;
+  height: 100vh;
+  grid-row: 1/ -1;
+  color: #555;
+  padding: 6px;
+  /* margin-left: 80px; */
+  /* position: fixed; */
+  overflow: scroll;
+  /* position: fixed; */
+}
+.menuBar .head {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+  color: #333;
+}
+.menuBar .bx-menu {
+  font-size: 30px;
+  border-radius: 4px;
+}
+.second-head {
+  font-size: 22px;
+  font-weight: 500;
+}
+ul {
+  list-style-type: none;
+}
+.menu_item {
+  border-radius: 4px;
+}
+.menu_item a {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 16px;
+  padding: 8px 10px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+.menu_item:hover {
+  background: #cccddd;
+  color: #222;
+}
+.menu_list {
+  padding: 12px 6px 0;
+}
+.menu_item a i {
+  font-size: 24px;
+}
+.menu_item a span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.dashPanel {
+  padding: 16px;
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileImg {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 50%;
+  mix-blend-mode: color-burn;
+  border: 1px solid #666;
+}
+.username {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index: 99;
+}
+.username .name {
+  font-weight: 500;
+  font-size: 20px;
+}
+.logout {
+  padding: 10px 24px;
+  border: 2px solid #333;
+  color: #333;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  z-index: 99;
+}
+.logout:hover {
+  background: #333;
+  color: #fff;
+}
+.logout:active {
+  transform: scale(0.95);
+}
+.newTrip {
+  color: #f5f5f5;
+  padding: 0 24px 24px;
+  grid-row: 2;
+  grid-column: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../img/beautiful-wide-shot-eiffel-tower-paris-surrounded-by-water-with-ships-colorful-sky.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.accommodation {
+  color: #f5f5f5;
+  padding: 0 24px 24px;
+  grid-row: 2;
+  grid-column: 2;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bedroom.jpg);
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+.travel {
+  margin-top: 56px;
+  max-width: 800px;
+  margin-left: 56px;
+}
+.primary-head {
+  font-weight: 500;
+}
+.accommodation .book,
+.newTrip .book {
+  animation: slideUp 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* Add this to your existing CSS or create a new file and link it in your HTML */
+
+.form-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  margin-left: 100px; /* Add a margin to the left */
+}
+#search {
+  width: 165px;
+  height: 50px;
+}
+
+.help {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #f5f5f5, #abcdef);
+}
+.helpBox {
+  padding: 48px;
+  text-align: center;
+  border-radius: 10px;
+  background: #f5f5f5;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.interface {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(
+    rgba(106, 106, 185, 0.35),
+    rgba(203, 99, 142, 0.35)
+  );
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  font-weight: 600;
+  /* margin-left: 10px; */
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+/* .table {
+  width: 700px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 4px !important;
+} */
+tbody tr:nth-child(even) {
+  background-color: #222 !important;
+  color: white;
+}
+tbody tr:nth-child(odd) {
+  background-color: rgb(224, 229, 224) !important;
+  color: black;
+}
+.heading h1 {
+  font-size: 92px;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url(../img/mountain.jpg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: cover;
+  background-position: center center;
+  animation: expand 0.8s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.interface a {
+  text-decoration: none;
+  background: #5eaaf7;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 4px;
+  animation: slideUp 0.8s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.interface a:active {
+  transform: scale(0.95);
+}
+.primary-head span {
+  color: #2f91f4;
+}
+.helpContainer {
+  margin-top: 32px;
+  text-align: center;
+  width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 48px;
+}
+.tert-head {
+  font-weight: 500;
+}
+.helpHead {
+  color: rgba(165, 42, 42, 0.796);
+  background-color: rgba(255, 192, 203, 0.652);
+  width: 110px;
+  font-size: 18px;
+  border-radius: 30px;
+  height: 36px;
+  margin-bottom: 12px;
+  position: relative;
+}
+.helpContent,
+.helpHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* max-width: 275px; */
+}
+.rightLine::after {
+  content: "";
+  width: 238px;
+  position: absolute;
+  border: 1px solid rgba(255, 192, 203, 0.652);
+  left: 100%;
+}
+.helpDesc {
+  font-size: 15px;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.helpDesc span {
+  color: brown;
+}
+.adminInterface {
+  padding: 24px;
+}
+.adminInterface h1 {
+  font-weight: 500;
+  font-size: 28px;
+}
+.mainBox {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  flex-direction: column;
+  /* position: fixed; */
+  /* overflow-y: scroll; */
+}
+.colBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+}
+.box {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #fff;
+  padding: 24px;
+  min-width: 290px;
+  /* width: 100%; */
+  flex: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.graphBox {
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: #fff;
+  padding: 24px;
+  min-width: 604px;
+  width: 100%;
+  height: 100%;
+  min-height: 432px;
+}
+.boxIcon {
+  font-size: 42px;
+  background: #2f91f4;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.125), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Add this to your existing CSS or create a new file and link it in your HTML */
+
+/* Basic styling for the table */
+.table {
+  margin-bottom: 1rem;
+  color: #212529;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Header styling */
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Alternate row coloring */
+
+/* Hover effect on rows */
+
+/* Responsive table for small screens */
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .table {
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* Center align cells in header row for small screens */
+  .table thead th {
+    text-align: center;
+  }
+}
+.cancel-button {
+  background-color: #f44336; /* Red color for delete/cancel action */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f; /* Darker red color on hover */
+}

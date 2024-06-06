@@ -1,0 +1,290 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.package-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.package {
+    position: relative;
+    flex-basis: calc(30% - 20px); /* Adjust the width as needed */
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 335px;
+}
+
+.package h2 {
+    color: #333;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.package p {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.toggle-details-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+
+.package-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+}
+
+.package-details.visible {
+    opacity: 1;
+    display: block;
+}
+
+.package-image img {
+    width: 100%;
+    height: 200px; /* Increase the height for a larger package */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+/* Existing CSS styles remain the same */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.popup-content {
+    text-align: left;
+}
+
+.close-popup-btn {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.close-popup-btn:hover {
+    background-color: #2980b9;
+}
+
+.book-now-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.book-now-btn:hover {
+    background-color: #218c53;
+}
+
+.star-rating {
+    display: inline-block;
+    font-size: 1.5em; /* Adjust the size of the stars */
+    color: #f1c40f; /* Default color for stars */
+    line-height: 1; /* Ensure consistent line height */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.star {
+    display: inline-block;
+    width: 30px; /* Adjust the size of the stars */
+    height: 30px;
+    font-size: 30px; /* Adjust the size of the stars */
+    color: #f1c40f; /* Default color for stars */
+}
+
+/* Filled star */
+.star.filled:before {
+    content: '\2605'; /* Unicode character for a filled star */
+}
+
+/* Half-filled star */
+.star.half-filled:before {
+    content: '\2605'; /* Unicode character for a filled star */
+    position: absolute;
+    overflow: hidden;
+    width: 50%;
+}
+
+/* Empty star */
+.star.empty:before {
+    content: '\2606'; /* Unicode character for an empty star */
+}
+/* Add these styles to your existing CSS file or style tag */
+
+/* Styling for the booking form popup */
+#bookingPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#bookingPopup h2 {
+    text-align: center;
+    color: #333;
+}
+
+#bookingForm {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#bookingForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#bookingForm input,
+#bookingForm select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#bookingForm button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#bookingForm button:hover {
+    background-color: #45a049;
+}
+
+#bookingForm button,
+#bookingForm [type="button"] {
+    margin-top: 10px;
+}
+
+    
+
+    .popup-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .popup-content label,
+    .popup-content input,
+    .popup-content select {
+        margin-bottom: 10px;
+    }
+
+    .popup-content .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .popup-content .form-row > div {
+        width: 48%; /* Adjust the width as needed */
+    }
+    #paymentPopup {
+        display: flex;
+         position: fixed;
+        top: 55%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    #paymentPopup h2 {
+        color: #333;
+    }
+
+    #paymentPopup label {
+        display: block;
+        margin-top: 10px;
+        color: #555;
+    }
+
+    #paymentPopup input {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+    }
+
+    #paymentPopup button {
+        background-color: #4CAF50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    #paymentPopup button:hover {
+        background-color: #45a049;
+    }
+    .wishlist-icon.added {
+        color: red !important;
+    }
+    
