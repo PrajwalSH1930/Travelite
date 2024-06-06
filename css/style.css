@@ -78,7 +78,7 @@ body {
   object-fit: cover;
   color: var(--white-color);
   padding: 40px !important;
-  backdrop-filter: blur(40px); */
+  backdrop-filter: blur(40px);
 }
 .image--1 {
   height: 440px;
@@ -129,7 +129,7 @@ body {
   height: 460px;
   width: 300px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../img/tall-ferris-wheel-with-beautiful-clear-sky.jpg");
+    url("../img/tall-ferris-wheel-with-beautiful-clear-sky-min.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -618,7 +618,7 @@ section.info {
 }
 .parallax_bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(../img/beautiful-wide-shot-eiffel-tower-paris-surrounded-by-water-with-ships-colorful-sky.jpg);
+    url(../img/beautiful-wide-shot-eiffel-tower-paris-surrounded-by-water-with-ships-colorful-sky-min.jpg);
   left: 0;
   position: absolute;
   top: 0;
@@ -968,7 +968,7 @@ input[type="date"]::-webkit-datetime-edit-year-field {
   min-height: 100vh;
   padding: 0 9%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../img/mountain.jpg);
+    url(../img/mountain-min.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
